@@ -53,11 +53,11 @@ picture img[data-src] {
   filter: blur(0.2em);
 }
 
-.weather-image {
+.temple-image {
   width: 100%;
 }
 
-.weather-image img {
+.temple-image img {
   width: 100%;
 }
 /*end gallery css*/
