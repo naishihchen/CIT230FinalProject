@@ -1,4 +1,0 @@
-function loadFunctions() {
-  getTime();
-  getWindChill();
-}
