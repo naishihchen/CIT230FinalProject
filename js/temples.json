@@ -1,0 +1,24 @@
+{
+"temples":	[
+  {
+    "name" : "Jordan River Temple",
+    "availability" :"closed",
+    "dates" : "12/09/2019 - 12/23/2019",
+  },
+  {
+    "name": "Salt Lake Temple",
+    "availability" : "closed",
+    "dates" : "12/29/2019 - tbd",
+  },
+  {
+  	"name" : "Boise Idaho Temple",
+    "availability": "closed",
+    "dates" : "aut2",
+  },
+  {
+  	"name" : "Washington D.C. Temple",
+    "availability": "closed",
+    "dates" : "tbd",
+  }
+	]
+}
