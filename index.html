@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link href="styles/temple_inn.css" rel="stylesheet">
+        <link href="styles/medium.css" rel="stylesheet">
+        <link href="styles/large.css" rel="stylesheet">
+        <link rel="shortcut icon" href="favicon.ico">
+        <title>Temple Inn and Suites Homepage</title>
+        <meta name="description" content="Website Project for BYUI CIT230 Class">
+        <link href="https://fonts.googleapis.com/css?family=Slabo+27px&display=swap" rel="stylesheet">
+        <script src="js/time.js"></script>
+        <script src="js/toggle-menu-script.js"></script>
+        <script src="js/towncards.js"></script>
+    </head>
+    <body onload="getTime();">
+        <header>
+            <div id="name-and-slogan">
+                <h1>Temple Inn and Suites</h1>
+                <i>Warm the body and the soul</i>
+            </div>
+            <img alt="Temple Inn Logo" src="images/Temple_Inn_Star.png" id="logo">
+        </header>
+        <nav>
+            <ul class="nav">
+                <li><a href="#" onclick="toggleMenu()">&#9776;</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="preston.html">Temple</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact_us.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div id="inn_img">
+            <h1>Welcome To The Temple Inn and Suites!</h1>
+            <img src="images/Temple_Inn.jpg" alt="Temple Inn and Suites"></div>
+            <div id="temples_grid">
+                <div class="temple"><img src="images/washington_dc_mormon_temple.jpeg" alt="DC temple"><p>Washington D.C Temple</p></div>
+                <div class="temple"><img src="images/philippines-youth-temple.jpg" alt="attending the temple"><p>Attending the Temple</p></div>
+                <div class="temple"><img src="images/boise_idaho_temple_sunshine.jpeg" alt="boise temple"><p>Boise, Idaho Temple</p></div>
+            </div>
+            <div id="events">
+                <h3>Let Us Introduce Ourselves!</h3>
+                <p> We are the Temple Inn & Suites, a hotel chain that builds and manages specialized hotel accommodations near temple locations of The Church of Jesus Christ of Latter-day Saints around the world. Our owner-operated company caters to temple workers, patrons, and their families by providing specialized services and accommodations that meet the needs of those patrons. The hotel accommodations and services are available to anyone willing to abide by the terms and policies outlined by the company. 
+                    <br>
+                    <br>
+                We offer world class service, whatever your temple-going needs. From beautiful rooms overlooking the temple grounds, to wonderful long-term suites for our temple missionaries. From a gorgeous wedding reception hall to a state of the art family research facility. Book a reservation today from our reservations page, and let Temple Inn and Suites be your home away from home.</p> 
+            </div>
+
+            <div id="featured-temple">
+                <h2>Featured Temple - Jordan River Temple</h2>
+                <img src="images/jordan_river_temple.jpeg" alt="Jordan River Temple">
+                <p>Summary</p>
+                <br>
+                <p>Announced: 3 February 1978</p>
+                <br>
+                <p>Ground Breaking: 9 June 1979</p>
+                <br>
+                <p>Dedicated: 16 November 1981</p>
+                <br>
+                <p>Rededicated: 20 May 2018</p>
+                <br>
+                <p>Status: Closed through 23 December 2019</p>
+            </div>
+        </main>
+        <footer>
+            <div>
+                <p>&copy; <span id="year"></span> | Temple Inn and Suites | Bethesda, MD |&nbsp;<a href="">BYUI Online Learning</a></p>
+            </div>
+            <div>
+                <p>Last Updated: <span id="fullDate"></span></p>
+            </div>
+        </footer>
+    </body>
+</html>

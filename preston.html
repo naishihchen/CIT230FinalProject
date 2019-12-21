@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link href="styles/temple_inn.css" rel="stylesheet">
+        <link href="styles/medium.css" rel="stylesheet">
+        <link href="styles/large.css" rel="stylesheet">
+        <link rel="shortcut icon" href="favicon.ico">
+        <title>Temples</title>
+        <meta name="description" content="Website Project for BYUI CIT230 Class">
+        <link href="https://fonts.googleapis.com/css?family=Slabo+27px&display=swap" rel="stylesheet">
+        <script src="js/time.js"></script>
+        <script src="js/toggle-menu-script.js"></script>
+        <script src="js/weatherapi.js"></script>
+        <script src="js/windchill.js"></script>
+    </head>
+    <body onload="getTime();">
+        <header>
+            <div id="name-and-slogan">
+                <h1>Temple Inn and Suites</h1>
+                <i>Warm the body and the soul</i>
+            </div>
+            <img alt="Temple Inn Logo" src="images/Temple_Inn_Star.png" id="logo">
+        </header>
+        <nav>
+            <ul class="nav">
+                <li><a href="#" onclick="toggleMenu()">&#9776;</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="preston.html">Temple</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact_us.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <main>
+          <div id="temple-gallery">
+            <h1>Temples</h1>
+            <div class="temple-div">
+            <picture class="temple-image">
+              <img src="images/placeholder-image.png" data-src="images/storms/Storm1.jpg" alt="storm-road-with-lightning">
+            </picture>
+            <p>Storm path lit with lightning</p>
+            </div>
+
+            <div class="weather-div">
+            <picture class="weather-image">
+              <img src="images/placeholder-image.png" data-src="images/storms/Storm2.jpg" alt="lightning-over-city">
+            </picture>
+            <p>Lightning over city</p>
+            </div>
+
+            <div class="weather-div">
+            <picture class="weather-image">
+              <img src="images/placeholder-image.png" data-src="images/storms/Storm3.jpg" alt="lightning-over-cloud">
+            </picture>
+            <p>Lightning over clouds</p>
+            </div>
+
+            <div class="weather-div">
+            <picture class="weather-image">
+              <img src="images/placeholder-image.png" data-src="images/storms/Storm4.jpg" alt="-blue-storm">
+            </picture>
+            <p>Blue storm with orange sunset</p>
+            </div>
+          </div>
+        </main>
+        <footer>
+            <div>
+                <p>&copy; <span id="year"></span> | Nai Shih Chen | Oregon |&nbsp;<a href="">BYUI Online Learning</a></p>
+            </div>
+            <div>
+                <p>Last Updated: <span id="fullDate"></span></p>
+            </div>
+        </footer>
+    </body>
+</html>

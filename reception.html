@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link href="styles/temple_inn.css" rel="stylesheet">
+        <link href="styles/medium.css" rel="stylesheet">
+        <link href="styles/large.css" rel="stylesheet">
+        <link rel="shortcut icon" href="favicon.ico">
+        <title>Services</title>
+        <meta name="description" content="Website Project for BYUI CIT230 Class">
+        <link href="https://fonts.googleapis.com/css?family=Slabo+27px&display=swap" rel="stylesheet">
+        <script src="js/time.js"></script>
+        <script src="js/toggle-menu-script.js"></script>
+        <script src="js/weatherapi.js"></script>
+        <script src="js/windchill.js"></script>
+    </head>
+    <body onload="getTime();">
+        <header>
+            <div id="name-and-slogan">
+                <h1>Temple Inn and Suites</h1>
+                <i>Warm the body and the soul</i>
+            </div>
+            <img alt="Temple Inn Logo" src="images/Temple_Inn_Star.png" id="logo">
+        </header>
+        <nav>
+            <ul class="nav">
+                <li><a href="#" onclick="toggleMenu()">&#9776;</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="preston.html">Temple</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact_us.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h2>Reception Hall</h2>
+            <div>
+               <div id="reception-hall">
+                  <img src="images/Wedding_Reception_Hall.jpg">
+                  <p>Marriage is a crowning achievement in life, and there's no better blessing that to be married in the temple. Come celebrate this glorious day without cares here at the Temple Inn and Suites! Our beautiful and affordable reception is a perfect space that will be a backdrop to a day you'll remember for the rest of your life. We also offer an array of services for your wedding occasion, including decorations and food services.
+                    <br>
+                    <br>
+                    Wedding Services:
+                    <br>
+                    We offer full catering of light snacks and tasty drinks. Our pricing is affordable and can be scaled according to the number of people attending. We also offer decoration packages, as well as the services of an online wedding planner, that can work according to your styles and our capabilities. These packages can be purchased separately or together.  Please feel free contact us for any questions you have.</p>
+               </div>
+            </div>
+        </main>
+        <footer>
+            <div>
+                <p>&copy; <span id="year"></span> | Temple Inn and Suites | Bethesda, MD |&nbsp;<a href="">BYUI Online Learning</a></p>
+            </div>
+            <div>
+                <p>Last Updated: <span id="fullDate"></span></p>
+            </div>
+        </footer>
+    </body>
+</html>

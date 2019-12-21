@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link href="styles/temple_inn.css" rel="stylesheet">
+        <link href="styles/medium.css" rel="stylesheet">
+        <link href="styles/large.css" rel="stylesheet">
+        <link rel="shortcut icon" href="favicon.ico">
+        <title>Services</title>
+        <meta name="description" content="Website Project for BYUI CIT230 Class">
+        <link href="https://fonts.googleapis.com/css?family=Slabo+27px&display=swap" rel="stylesheet">
+        <script src="js/time.js"></script>
+        <script src="js/toggle-menu-script.js"></script>
+        <script src="js/weatherapi.js"></script>
+        <script src="js/windchill.js"></script>
+    </head>
+    <body onload="getTime();">
+        <header>
+            <div id="name-and-slogan">
+                <h1>Temple Inn and Suites</h1>
+                <i>Warm the body and the soul</i>
+            </div>
+            <img alt="Temple Inn Logo" src="images/Temple_Inn_Star.png" id="logo">
+        </header>
+        <nav>
+            <ul class="nav">
+                <li><a href="#" onclick="toggleMenu()">&#9776;</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="preston.html">Temple</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="fish_haven.html">Services</a></li>
+                <li><a href="services.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <main>
+                <h2>Long-term Suites</h2>
+                        <div id="long-term-suites">
+                            <p>As part of Temple Inn and Suites' mission to further family history and temple work, we offer low-cost, high quality long-term suites for temple missionaries, complete with full kitchenettes. We offer variable leases, flexible start dates and any special accomodations. Please contact us using the form below for any questions.</p>
+                            <img src="images/long-term-suite-with-kitchenette_1.jpg">
+                            <img src="images/long-term-suite-with-kitchenette_2.jpg">
+                            <img src="images/long-term-suite-with-kitchenette_3.jpg">
+                        </div>
+                        <fieldset class="form2" id="contact-form">
+                    <legend class="font">
+                    Contact Details:
+                    </legend>
+                        <label>Name: <input type="text" name="name" pattern="[A-Za-z ]{5,}" placeholder="Full Name" required></label>
+                        <br>
+                        <label>E-Mail:<input type="email" name="email" placeholder="user@email.com" required></label>
+                        <br>
+                        <label>Phone: <input type="tel" name="phone" placeholder="###-###-####" required></label>
+                        <br>
+                        <label>Home State/Country: <input type="text" name="home" pattern="[A-Za-z ]{5,}" placeholder="Home State/Country" required></label>
+                        <br>
+                        <p>
+                        <label>Comments<br>
+                        <textarea name="comments" cols="50" rows="6" placeholder="Please let us know the nature of your questions"></textarea></label>
+                        </p>
+                </fieldset>
+        </main>
+        <footer>
+            <div>
+                <p>&copy; <span id="year"></span> | Temple Inn and Suites | Bethesda, MD |&nbsp;<a href="">BYUI Online Learning</a></p>
+            </div>
+            <div>
+                <p>Last Updated: <span id="fullDate"></span></p>
+            </div>
+        </footer>
+    </body>
+</html>

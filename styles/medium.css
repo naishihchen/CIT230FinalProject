@@ -1,0 +1,77 @@
+@media only screen and (min-width: 40em) {
+
+    .nav {
+        justify-content: space-evenly;
+        align-content: center;
+        align-items: center;
+    }
+
+    .nav li:first-child {
+        display: none;
+    }
+
+    .nav li {
+        display: block;
+    }
+
+    section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    section:nth-child(2) {
+        flex-direction: row-reverse;
+    }
+
+    section img {
+        padding: 10px;
+    }
+
+    #temples_grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 20px;
+    }
+
+    /*gallery css*/
+    #weather-gallery {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 20px;
+    }
+    /*end gallery css*/
+
+    #forecast {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #forecast th {
+        background-color: #CBEAA6;
+        border: 1px solid black;
+    }
+
+    #forecast td {
+        border: 1px solid black;
+    }
+
+    #forecast td p {
+        text-align: center;
+    }
+
+    #map-image {
+        display: flex;
+        width: 300px;
+    }
+
+    #contact-info {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+}
