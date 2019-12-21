@@ -7,17 +7,19 @@ fetch(requestURL)
   .then(function (jsonObject) {
     console.table(jsonObject);  // temporary checking for valid response and data parsing
     const templedata = jsonObject['temples'];
+    let cardSection = document.createElement('section');
+    let card = document.createElement('div');
+    let h2 = document.createElement('h2');
+    h2.textContent = "Closures";
+    card.appendChild(h2);
+
     for (let i = 0; i < templedata.length; i++ ) {
       if (templedata[i].availability == "closed") {
-    	  let cardSection = document.createElement('section');
-        let card = document.createElement('div');
-		    let h2 = document.createElement('h3');
+    	  
         let closures = document.createElement('p');
+ 
+        closures.textContent = templedata[i].name + " - " + templedata[i].dates;
 
-		    h2.textContent = "Closures";
-            closures.textContent = templedata[i].name + " - " + templedata[i].dates;
-
-    		card.appendChild(h2);
         card.appendChild(closures);
 
         cardSection.appendChild(card)
